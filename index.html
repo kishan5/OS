@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Demo 6</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="6/thumbs.css" rel="stylesheet" type="text/css" />
+    <link href="6/ninja-slider.css" rel="stylesheet" type="text/css" />
+    <!--ninjaVideoPlugin.js is required only when the slider contains video or audio.-->
+    <script src="6/ninjaVideoPlugin.js"></script>
+    <script src="6/ninja-slider.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        //don't copy the script below into your page.
+        if (!document.domain) alert("The video will not work properly if opening the page by local path. Please test this page through HTTP on a web or localhost server");
+    </script>
+
+    <style>
+        body {font: normal 0.9em Arial;margin:0;}
+        a {color:#1155CC;}
+        header {display:block;padding:60px 0 10px;background-color:#333; text-align:center;}
+        header a {
+            font-family: sans-serif;
+            font-size: 24px;
+            line-height: 24px;
+            padding: 8px 13px 7px;
+            color: #555;
+            text-decoration:none;
+            transition: color 0.7s;
+        }
+        header a.active {
+            font-weight:bold;
+            width: 24px;
+            height: 24px;
+            padding: 4px;
+            text-align: center;
+            display:inline-block;
+            border-radius: 50%;
+            background: #4d5256;
+            color: #191919;
+        }
+
+        #ninja-slider-pager {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+        <!--<a class="active" href="demo6.html">6</a>-->
+		<h1>Omelette Station dishes</h1>
+        
+    </header>
+    <!--start-->
+    <div id="ninja-slider">
+        <div class="slider-inner">
+            <ul>
+				<li><a class="ns-img" href="OSimg/bf_omelette.jpg"></a></li>
+				<li><a class="ns-img" href="OSimg/Cauliflower n guacamole hashbrowns.jpg"></a></li>
+				<li><a class="ns-img" href="OSimg/Chicken Salami omelette sandwich.jpg"></a></li>
+				<li><a class="ns-img" href="OSimg/Chicken stuffed omelette.jpg"></a></li>
+				<li><a class="ns-img" href="OSimg/Chopped ingredients.jpg"></a></li>
+				<li><a class="ns-img" href="OSimg/Egg banana dessert.jpg"></a></li>
+				<li><a class="ns-img" href="OSimg/Egg pancakes.jpg"></a></li>
+				<li><a class="ns-img" href="OSimg/Egg tacos.jpg"></a></li>
+				<li><a class="ns-img" href="OSimg/Egg tacos-2.jpg"></a></li>
+				<li><a class="ns-img" href="OSimg/egg_tacos.jpg"></a></li>
+				<li><a class="ns-img" href="OSimg/French fries omelette.jpg"></a></li>
+				<li><a class="ns-img" href="OSimg/French toast.jpg"></a></li>
+				<li><a class="ns-img" href="OSimg/Fresh Guacamole.jpg"></a></li>
+				<li><a class="ns-img" href="OSimg/Guacamole omelette.jpg"></a></li>
+				<li><a class="ns-img" href="OSimg/Indian Masala omelette.jpg"></a></li>
+				<li><a class="ns-img" href="OSimg/Instant noodles omelette.jpg"></a></li>
+				<li><a class="ns-img" href="OSimg/Mac n cheese omelette (2).jpg"></a></li>
+				<li><a class="ns-img" href="OSimg/Mac n cheese omelette.jpg"></a></li>
+				<li><a class="ns-img" href="OSimg/Mac n cheese omelette-3.jpg"></a></li>
+				<li><a class="ns-img" href="OSimg/Mediterranean omelette.jpg"></a></li>
+				<li><a class="ns-img" href="OSimg/Mushroom omelette.jpg"></a></li>
+				<li><a class="ns-img" href="OSimg/Oats omelette.jpg"></a></li>
+				<li><a class="ns-img" href="OSimg/Okonomiyaki omelette (2).jpg"></a></li>
+				<li><a class="ns-img" href="OSimg/Okonomiyaki omelette.jpg"></a></li>
+				<li><a class="ns-img" href="OSimg/Omelet burger.jpg"></a></li>
+				<li><a class="ns-img" href="OSimg/Omelette burger.jpg"></a></li>
+				<li><a class="ns-img" href="OSimg/Omelette burger-2.jpg"></a></li>
+				<li><a class="ns-img" href="OSimg/Omelettiza.jpg"></a></li>
+				<li><a class="ns-img" href="OSimg/OOTD.jpg"></a></li>
+				<li><a class="ns-img" href="OSimg/Paneer stuffed omelette.jpg"></a></li>
+				<li><a class="ns-img" href="OSimg/Pepperoni omelette.jpg"></a></li>
+				<li><a class="ns-img" href="OSimg/Screenshot_20180822-222903.jpg"></a></li>
+				<li><a class="ns-img" href="OSimg/Screenshot_20180822-222921.jpg"></a></li>
+				<li><a class="ns-img" href="OSimg/Spanish omelette.jpg"></a></li>
+				<li><a class="ns-img" href="OSimg/Spud omelette.jpg"></a></li>
+				<li><a class="ns-img" href="OSimg/Veg mayo salad omelette.jpg"></a></li>
+
+				<li>
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/1NgTGccJOnc?title=0&portrait=0&byline=0" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </li>
+                <!--<li>
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/1NgTGccJOnc?enablejsapi=1&start=0&rel=0&showinfo=0&iv_load_policy=3&modestbranding=1" wmode="Opaque" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <a class="ns-img" href="img/2.jpg"></a>
+                    <div class="video-playbutton-layer"></div>
+                </li>--->
+                <li>
+                    <div class="video">
+                        <video controls data-autoplay="false">
+                            <source src="img/mcvideo.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                    <a class="ns-img" href="img/3.jpg"></a>
+                    <div class="video-playbutton-layer"></div>
+                </li>
+                <!--Meant for playing an audio file on a static image
+				<li>
+                    <a class="ns-img" href="img/4.jpg"></a>
+                    <div class="video" style="background-color:transparent;height:auto;top:auto;bottom:0px;">
+                        <audio controls>
+                            <source src="img/mcaudio.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </li>-->
+            </ul>
+        </div>
+        <div id="thumbs">
+<!--            <span onclick="nslider.displaySlide(0)"><img src="img/1.jpg" /></span>
+           <span onclick="nslider.playVideo(1)"><img src="img/2.jpg" /><span class="playvideo">AUTO</span></span>
+            <span onclick="nslider.displaySlide(2)"><img src="img/3.jpg" /></span>
+            <span onclick="nslider.playVideo(3)"><img src="img/4.jpg" /><span class="playvideo">AUTO</span></span>-->
+			
+			<span onclick="nslider.displaySlide(0)"><img src="OSimg/bf_omelette.jpg"/></span>
+			<span onclick="nslider.displaySlide(1)"><img src="OSimg/Cauliflower n guacamole hashbrowns.jpg"/></span>
+			<span onclick="nslider.displaySlide(2)"><img src="OSimg/Chicken Salami omelette sandwich.jpg"/></span>
+			<span onclick="nslider.displaySlide(3)"><img src="OSimg/Chicken stuffed omelette.jpg"/></span>
+			<span onclick="nslider.displaySlide(4)"><img src="OSimg/Chopped ingredients.jpg"/></span>
+			<span onclick="nslider.displaySlide(5)"><img src="OSimg/Egg banana dessert.jpg"/></span>
+			<span onclick="nslider.displaySlide(6)"><img src="OSimg/Egg pancakes.jpg"/></span>
+			<span onclick="nslider.displaySlide(7)"><img src="OSimg/Egg tacos.jpg"/></span>
+			<span onclick="nslider.displaySlide(8)"><img src="OSimg/Egg tacos-2.jpg"/></span>
+			<span onclick="nslider.displaySlide(9)"><img src="OSimg/egg_tacos.jpg"/></span>
+			<span onclick="nslider.displaySlide(10)"><img src="OSimg/French fries omelette.jpg"/></span>
+			<span onclick="nslider.displaySlide(11)"><img src="OSimg/French toast.jpg"/></span>
+			<span onclick="nslider.displaySlide(12)"><img src="OSimg/Fresh Guacamole.jpg"/></span>
+			<span onclick="nslider.displaySlide(13)"><img src="OSimg/Guacamole omelette.jpg"/></span>
+			<span onclick="nslider.displaySlide(14)"><img src="OSimg/Indian Masala omelette.jpg"/></span>
+			<span onclick="nslider.displaySlide(15)"><img src="OSimg/Instant noodles omelette.jpg"/></span>
+			<span onclick="nslider.displaySlide(16)"><img src="OSimg/Mac n cheese omelette (2).jpg"/></span>
+			<span onclick="nslider.displaySlide(17)"><img src="OSimg/Mac n cheese omelette.jpg"/></span>
+			<span onclick="nslider.displaySlide(18)"><img src="OSimg/Mac n cheese omelette-3.jpg"/></span>
+			<span onclick="nslider.displaySlide(19)"><img src="OSimg/Mediterranean omelette.jpg"/></span>
+			<span onclick="nslider.displaySlide(20)"><img src="OSimg/Mushroom omelette.jpg"/></span>
+			<span onclick="nslider.displaySlide(21)"><img src="OSimg/Oats omelette.jpg"/></span>
+			<span onclick="nslider.displaySlide(22)"><img src="OSimg/Okonomiyaki omelette (2).jpg"/></span>
+			<span onclick="nslider.displaySlide(23)"><img src="OSimg/Okonomiyaki omelette.jpg"/></span>
+			<span onclick="nslider.displaySlide(24)"><img src="OSimg/Omelet burger.jpg"/></span>
+			<span onclick="nslider.displaySlide(25)"><img src="OSimg/Omelette burger.jpg"/></span>
+			<span onclick="nslider.displaySlide(26)"><img src="OSimg/Omelette burger-2.jpg"/></span>
+			<span onclick="nslider.displaySlide(27)"><img src="OSimg/Omelettiza.jpg"/></span>
+			<span onclick="nslider.displaySlide(28)"><img src="OSimg/OOTD.jpg"/></span>
+			<span onclick="nslider.displaySlide(29)"><img src="OSimg/Paneer stuffed omelette.jpg"/></span>
+			<span onclick="nslider.displaySlide(30)"><img src="OSimg/Pepperoni omelette.jpg"/></span>
+			<span onclick="nslider.displaySlide(31)"><img src="OSimg/Screenshot_20180822-222903.jpg"/></span>
+			<span onclick="nslider.displaySlide(32)"><img src="OSimg/Screenshot_20180822-222921.jpg"/></span>
+			<span onclick="nslider.displaySlide(33)"><img src="OSimg/Spanish omelette.jpg"/></span>
+			<span onclick="nslider.displaySlide(34)"><img src="OSimg/Spud omelette.jpg"/></span>
+			<span onclick="nslider.displaySlide(34)"><img src="OSimg/Veg mayo salad omelette.jpg"/></span>
+
+        </div>
+    </div>
+    <!--end-->
+    <div style="width:700px;margin:90px auto;">
+        <h1>Ninja Slider: playVedio function</h1>
+        <p>&nbsp;</p>
+        <p>
+            The Ninja Slide has a built-in function, <em>playVideo(indexOrLi)</em>. It can be used to programmatically control the video/audio playing.
+            You will see this when clicking the 2nd or the last thumbnail in the demo above.
+        </p>
+        <p>For detailed instructions, please visit <a href="http://www.menucool.com/slider/ninja-slider-playvedio-function">playVedio function</a>.</p>
+    </div>
+</body>
+</html>
